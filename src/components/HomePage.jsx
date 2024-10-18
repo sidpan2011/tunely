@@ -3,6 +3,7 @@ import Title from './Title'
 import { FloatingDockDemo } from './FloatingDock'
 import About from './About'
 import { Gallery } from './Gallery'
+import Experiences from './Experiences'
 
 const HomePage = () => {
     return (
@@ -10,6 +11,7 @@ const HomePage = () => {
             <Title />
             <About />
             <Gallery />
+            <Experiences />
             <div className='absolute bottom-24 left-0 right-0'>
                 <FloatingDockDemo />
             </div>

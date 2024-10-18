@@ -5,7 +5,7 @@ import BlurFade from './ui/blur-fade'
 
 const Title = () => {
     return (
-        <div className='lg:mt-28 md:mt-28 mt-12 mb-10 flex items-center justify-center flex-row'>
+        <div className='lg:mt-28 md:mt-28 mt-12 mb-10 flex flex-row'>
             <BlurFade>
 
             <div className='flex justify-between items-start'>
@@ -14,7 +14,7 @@ const Title = () => {
                     <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex quis temporibus reiciendis deserunt iusto tempora doloribus! Consequatur reiciendis soluta dolores incidunt, perferendis non magni minima, veritatis inventore officia delectus.</p>
                 </div>
                 <div className=''>
-                    <Image src={pfp} alt='Profile picture' className='mx-5 rounded-full  max-w-28' />
+                    <Image src={pfp} alt='Profile picture' className='ml-5 rounded-full  max-w-28' />
                 </div>
             </div>
             </BlurFade>
