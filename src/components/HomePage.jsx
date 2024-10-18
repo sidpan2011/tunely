@@ -4,6 +4,9 @@ import { FloatingDockDemo } from './FloatingDock'
 import About from './About'
 import { Gallery } from './Gallery'
 import Experiences from './Experiences'
+import Education from './Education'
+import Projects from './Projects'
+import ContactMe from './ContactMe'
 
 const HomePage = () => {
     return (
@@ -12,6 +15,9 @@ const HomePage = () => {
             <About />
             <Gallery />
             <Experiences />
+            <Education />
+            <Projects />
+            <ContactMe />
             <div className='absolute bottom-24 left-0 right-0'>
                 <FloatingDockDemo />
             </div>

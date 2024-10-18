@@ -32,12 +32,12 @@ const Experiences = () => {
     return (
         <div className='w-full max-w-2xl mx-auto'>
             <BlurFade>
-                <HighLight text={"Work Experiences"} />
+            <h2 className='font-bold text-xl'>Work Experiences</h2>
                 {
                     experiences.map((item, index) => (
                         <div className='flex justify-between items-center'>
-                            <div className='my-5 flex items-center' key={index}>
-                                <Image src={item.logo} width={80} height={80} />
+                            <div className='my-2 flex items-center' key={index}>
+                                <Image src={item.logo} width={60} height={60} />
                                 <div>
                                     <h3>{item.company_name}</h3>
                                     <p className='text-sm'>{item.title}</p>
