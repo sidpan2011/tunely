@@ -6,7 +6,6 @@ const About = () => {
     return (
         <div className='w-full max-w-2xl mx-auto'>
             <BlurFade>
-
             <h2 className='font-bold text-xl'>About</h2>
                 <div className='my-3'>
                     <p className='text-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos temporibus inventore pariatur eligendi exercitationem debitis quis nobis doloribus fugit, cupiditate et facilis possimus mollitia ducimus harum blanditiis quaerat fugiat perferendis.</p>

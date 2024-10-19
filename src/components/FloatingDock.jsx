@@ -74,7 +74,7 @@ export function FloatingDockDemo() {
             icon: (
                 <ModeToggle />
             ),
-            href: "#"
+            href: null
         }
     ];
     return (
