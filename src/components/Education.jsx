@@ -7,26 +7,26 @@ import Image from 'next/image'
 const Education = () => {
     const experiences = [
         {
-            logo: "https://dev.0byte.tech/assets/default-BtN-z6rI.png",
-            company_name: "ZeroByte",
-            title: "Co-founder, CEO",
-            from_to_date: "Sep 2024 - Present"
+            logo: "https://media.licdn.com/dms/image/v2/C560BAQGiWBwKAnC5Yw/company-logo_200_200/company-logo_200_200/0/1646650883502?e=1737590400&v=beta&t=RpMzgINlRGnlgdJ2d9ArzlDT9MKNbXrR-CspiUmACq0",
+            company_name: "Unacademy",
+            title: "GATE (Graduate Aptitude Test in Engineering) Computer Science",
+            from_to_date: "May 2022 - Mar 2023"
 
         },
         {
-            logo: "https://dev.0byte.tech/assets/default-BtN-z6rI.png",
-            company_name: "ZeroByte",
-            title: "Co-founder, CEO",
-            from_to_date: "Sep 2024 - Present"
-
+            logo: "https://upload.wikimedia.org/wikipedia/en/3/3a/Lovely_Professional_University_logo.png",
+            company_name: "Lovely Professional University",
+            title: "Bachelor of Technology, Electronics and Communication Engineering",
+            from_to_date: "Aug 2017 - Aug 2021"
         },
-        {
-            logo: "https://dev.0byte.tech/assets/default-BtN-z6rI.png",
-            company_name: "ZeroByte",
-            title: "Co-founder, CEO",
-            from_to_date: "Sep 2024 - Present"
+        // {
+        //     logo: "https://i.pinimg.com/originals/5a/4e/f9/5a4ef9b9d7806da10afb1e9b3efdb22d.png",
+        //     company_name: "Kendriya Vidyalaya",
+        //     title: "Higher Secondary Education (10+2)",
+        //     from_to_date: "Sep 2024 - Present"
 
-        },
+        // },
+        
 
     ]
     return (
@@ -35,12 +35,12 @@ const Education = () => {
                 <h2 className='font-bold text-xl'>Education</h2>
                 {
                     experiences.map((item, index) => (
-                        <div className='flex justify-between items-center'>
-                            <div className='my-2 flex items-center' key={index}>
-                                <Image src={item.logo} width={60} height={60} />
+                        <div className='flex justify-between items-center mb-6 mt-4'>
+                            <div className=' flex items-center' key={index}>
+                                <Image src={item.logo} width={40} height={40} className='rounded-md mr-3 mt-1' />
                                 <div>
                                     <h3>{item.company_name}</h3>
-                                    <p className='text-sm'>{item.title}</p>
+                                    <p className='text-sm dark:text-white/70 text-black/70'>{item.title}</p>
                                 </div>
                             </div>
                             <div>

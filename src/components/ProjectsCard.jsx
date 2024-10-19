@@ -5,7 +5,7 @@ import { Button } from './ui/button'
 
 const ProjectsCard = ({ project }) => {
     return (
-        <Card className="overflow-hidden">
+        <Card className="overflow-hidden h-auto">
             <Image
                 src={project.gif}
                 alt={project.title}
@@ -21,23 +21,29 @@ const ProjectsCard = ({ project }) => {
                 <p className='text-sm dark:text-white/40 text-black/40'>{project.description}</p>
                 <div className="flex flex-wrap gap-2 mt-2">
                     {project.keywords.map((keyword, index) => (
-                        <Button key={index} size="xs" variant="tag" className=" text-xs text-black dark:text-white font-medium px-2.5 py-0.5 rounded ">
+                        <Button key={index} size="xs" variant="tag" className="text-[10px] text-black dark:text-white font-medium px-2.5 py-0.5 rounded-md ">
                             {keyword}
                         </Button>
                     ))}
                 </div>
             </CardContent>
             <CardFooter className='flex space-x-2'>
-                <div className=''>
-                    <a href={project.links} target="_blank" rel="noopener noreferrer" className=" hover:underline">
-                        <Button size="xs" className="text-xs">Website</Button>
-                    </a>
-                </div>
-                <div className=''>
-                    <a href={project.links} target="_blank" rel="noopener noreferrer" className="">
-                        <Button size="xs" className="text-xs">GitHub</Button>
-                    </a>
-                </div>
+                {
+                    project.web && <div>
+                        <a href={project.web} target="_blank" rel="noopener noreferrer" className=" hover:underline">
+                            <Button size="xs" className="text-[10px]">Website</Button>
+                        </a>
+                    </div>
+                }
+                {
+                    project.repo && <div className=''>
+                        <a href={project.repo} target="_blank" rel="noopener noreferrer" className="">
+                            <Button size="xs" className="text-[10px]">GitHub</Button>
+                        </a>
+                    </div>
+                }
+
+
             </CardFooter>
         </Card>
     )

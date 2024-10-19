@@ -1,5 +1,4 @@
 import React from 'react'
-import HighLight from './HighLight'
 import BlurFade from './ui/blur-fade'
 
 const About = () => {
