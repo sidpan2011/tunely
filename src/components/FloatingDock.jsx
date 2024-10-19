@@ -2,6 +2,7 @@
 import React from "react";
 import {
     IconBrandGithub,
+    IconBrandLinkedin,
     IconBrandX,
     IconExchange,
     IconHome,
@@ -19,7 +20,7 @@ export function FloatingDockDemo() {
             icon: (
                 <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "/",
         },
 
         {
@@ -36,23 +37,23 @@ export function FloatingDockDemo() {
             ),
             href: "#",
         },
+        // {
+        //     title: "Aceternity UI",
+        //     icon: (
+        //         <Image
+        //             src="https://assets.aceternity.com/logo-dark.png"
+        //             width={20}
+        //             height={20}
+        //             alt="Aceternity Logo" />
+        //     ),
+        //     href: "#",
+        // },
         {
-            title: "Aceternity UI",
+            title: "LinkedIn",
             icon: (
-                <Image
-                    src="https://assets.aceternity.com/logo-dark.png"
-                    width={20}
-                    height={20}
-                    alt="Aceternity Logo" />
+                <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
-        },
-        {
-            title: "Changelog",
-            icon: (
-                <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-            ),
-            href: "#",
+            href: "https://www.linkedin.com/in/sidhanthpandey/",
         },
 
         {
@@ -60,14 +61,14 @@ export function FloatingDockDemo() {
             icon: (
                 <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "https://x.com/sidhanthpande",
         },
         {
             title: "GitHub",
             icon: (
                 <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "https://github.com/sidpan2011",
         },
         {
             title: "Mode",
