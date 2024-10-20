@@ -5,7 +5,7 @@ import ProjectsCard from './ProjectsCard'
 const Projects = () => {
   const myProjects = [
     {
-      gif: "https://picsum.photos/seed/project2/300/200",
+      gif: "https://my-projects-gifs.s3.amazonaws.com/zerobyte-wallet.mov",
       title: "ZeroByte Wallet",
       from_to_date: "Oct 2024 - Present",
       description: "A privacy-focused Solana wallet for anonymous transactions, offering easy integration and simplified Web3 payments.",
@@ -14,7 +14,7 @@ const Projects = () => {
       repo: "https://github.com/zr0byte/zerobyte-wallet"
     },
     {
-      gif: "https://picsum.photos/seed/project1/300/200",
+      gif: "https://my-projects-gifs.s3.amazonaws.com/zerobyte.mov",
       title: "ZeroByte",
       from_to_date: "Sep 2024 - Present",
       description: "ZeroByte is a blockchain platform that enables private, secure, and fast cryptocurrency transactions, preserving user anonymity in digital finance.",
@@ -23,16 +23,16 @@ const Projects = () => {
       repo: "https://github.com/zr0byte/zerobyte/"
     },
     {
-      gif: "https://picsum.photos/seed/project3/300/200",
-      title: "Your To-do App v2",
+      gif: "https://my-projects-gifs.s3.amazonaws.com/taskly.mov",
+      title: "Taskly",
       from_to_date: "Aug 2024 - Present",
       description: "A revamped task management app built with Next.js 14, React, and enhanced UI using Tailwind CSS, Shadcn UI, and Magic UI.",
-      keywords: ["Next.js 14","React", "Tailwind CSS"],
+      keywords: ["Next.js 14","React", "Tailwind CSS", "Clerk"],
       web: "",
       repo: "https://github.com/sidpan2011/your-todo-v2"
     },
     {
-      gif: "https://picsum.photos/seed/project3/300/200",
+      gif: "https://my-projects-gifs.s3.amazonaws.com/your-todo.mov",
       title: "Your To-do App v1",
       from_to_date: "Mar 2024 - Apr 2024",
       description: "A simple UI friendly todo app, you can create, edit, pin to top and mark as done and more using React, CSS and Redux.",
@@ -41,7 +41,7 @@ const Projects = () => {
       repo: "https://github.com/sidpan2011/your-todo"
     },
     {
-      gif: "https://picsum.photos/seed/project4/300/200",
+      gif: "https://my-projects-gifs.s3.amazonaws.com/typing-master.mov",
       title: "Typing Master",
       from_to_date: "Jun 2023 - Aug 2023",
       description: "A minimalist game to improve typing speed, offering detailed performance analysis (WPM, accuracy, errors) with a user-friendly interface.",
@@ -49,15 +49,7 @@ const Projects = () => {
       web: "https://typing-master0.netlify.app/",
       repo: "https://github.com/sidpan2011/Typing-Master"
     },
-    {
-      gif: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "",
-      from_to_date: "",
-      description: "More cool projects are on the way.",
-      keywords: [],
-      web: "",
-      repo: ""
-    }
+    
   ]
   return (
     <div className='my-8'>

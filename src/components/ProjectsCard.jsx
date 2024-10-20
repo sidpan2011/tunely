@@ -4,15 +4,26 @@ import Image from 'next/image'
 import { Button } from './ui/button'
 
 const ProjectsCard = ({ project }) => {
+    // console.log(project.video);
     return (
         <Card className="overflow-hidden h-auto">
-            <Image
-                src={project.gif}
-                alt={project.title}
-                width={300}
-                height={200}
-                className="w-full object-cover h-40"
-            />
+            {project.gif ? (
+                <a href={project.web} target='_blank'>
+                    <video
+                        src={project.gif}
+                        alt={project.title}
+                        className="w-full object-cover h-auto"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                    />
+                </a>
+            ) : (
+                <div className="w-full h-40 bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                    <span className="text-gray-500 dark:text-gray-400">No video available</span>
+                </div>
+            )}
             <CardHeader>
                 <CardTitle className="text-md">{project.title}</CardTitle>
                 <CardDescription className="text-sm dark:text-white/60 text-black/60">{project.from_to_date}</CardDescription>
@@ -28,22 +39,20 @@ const ProjectsCard = ({ project }) => {
                 </div>
             </CardContent>
             <CardFooter className='flex space-x-2'>
-                {
-                    project.web && <div>
-                        <a href={project.web} target="_blank" rel="noopener noreferrer" className=" hover:underline">
+                {project.web && (
+                    <div>
+                        <a href={project.web} target="_blank" rel="noopener noreferrer" className="hover:underline">
                             <Button size="xs" className="text-[10px]">Website</Button>
                         </a>
                     </div>
-                }
-                {
-                    project.repo && <div className=''>
-                        <a href={project.repo} target="_blank" rel="noopener noreferrer" className="">
+                )}
+                {project.repo && (
+                    <div>
+                        <a href={project.repo} target="_blank" rel="noopener noreferrer">
                             <Button size="xs" className="text-[10px]">GitHub</Button>
                         </a>
                     </div>
-                }
-
-
+                )}
             </CardFooter>
         </Card>
     )

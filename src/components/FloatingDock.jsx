@@ -4,14 +4,13 @@ import {
     IconBrandGithub,
     IconBrandLinkedin,
     IconBrandX,
-    IconExchange,
     IconHome,
     IconNewSection,
-    IconTerminal2,
 } from "@tabler/icons-react";
-import Image from "next/image";
+import { FaMedium } from "react-icons/fa6";
 import { FloatingDock } from "./ui/floating-dock";
 import { ModeToggle } from "./mode-toggle";
+import { FileUser } from "lucide-react";
 
 export function FloatingDockDemo() {
     const links = [
@@ -22,32 +21,20 @@ export function FloatingDockDemo() {
             ),
             href: "/",
         },
-
         {
-            title: "Products",
+            title: "Blogs",
             icon: (
-                <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <FaMedium className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "https://medium.com/@sidhanthpandey",
         },
         {
-            title: "Components",
+            title: "Resume",
             icon: (
-                <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <FileUser className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "https://drive.google.com/file/d/1NhtVcggZvFPtobuEu1UedCh5dIEeymCj/view?usp=drive_link",
         },
-        // {
-        //     title: "Aceternity UI",
-        //     icon: (
-        //         <Image
-        //             src="https://assets.aceternity.com/logo-dark.png"
-        //             width={20}
-        //             height={20}
-        //             alt="Aceternity Logo" />
-        //     ),
-        //     href: "#",
-        // },
         {
             title: "LinkedIn",
             icon: (
